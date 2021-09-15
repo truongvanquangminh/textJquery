@@ -1,0 +1,92 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+}
+
+#context {
+    position: absolute;
+    display: inline-block;
+    background: #fff;
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.context-menu {
+    list-style: none;
+}
+
+.context-menu a {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.context-menu a:hover {
+    background: #eee;
+}
+
+.context-menu a.hidden {
+    display: none;
+}
+
+.context-menu a.hidden.shown {
+    display: block;
+}
+
+.profile-menu {
+    list-style: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* [data-trigger="dropdown"] {
+    padding-bottom: 15px;
+} */
+
+.profile-menu .profile-menu-trigger:hover{
+    color: #00f;
+}
+
+.profile-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-submenu {
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    background-color: #fff;
+    display: none;
+    border: 1px solid rgba(0, 0, 0, .05);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.profile-submenu.active {
+    display: block;
+}
+
+.profile-submenu a {
+    display: block;
+    padding: 10px;
+}
+
+.profile-submenu li:hover {
+    background-color: #ccc;
+}
+
+input[type=email], input[type=text] {
+    margin-top: 10px;
+    padding: 10px;
+    width: 250px;
+}
